@@ -37,6 +37,11 @@ function App () {
         }); 
       }
 
+      // Meteo
+      // https://api.weatherapi.com/v1/history.json?key=d0f5038b2829415b9a7164206231601&q=paris&dt=2019-05-05
+      // => {"error":{"code":1008,"message":"API key is limited to get history data. Please check our pricing page and upgrade to higher plan."}}
+      // alors que j'ai la version d'essai de 15 jours
+
       const url = "https://opendata.paris.fr/api/records/1.0/search/?dataset=lieux-de-tournage-a-paris&q=&rows=1000&sort=annee_tournage&facet=annee_tournage&facet=type_tournage&facet=nom_tournage&facet=nom_realisateur&facet=nom_producteur&facet=ardt_lieu&facet=date_debut&facet=date_fin"
       fetch(url)
       .then(res => res.json())
