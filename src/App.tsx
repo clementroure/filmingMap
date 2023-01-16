@@ -231,7 +231,7 @@ function App () {
 
       <p className='text-5xl text-neutral-50 opacity-90 w-4/12 justify-center items-center text-center align-middle fixed mt-8 font-extrabold italic'>&nbsp;&nbsp;&nbsp;FILMINGS MAP</p>
       <div className='w-4/12 h-5/6 grid place-items-center left-4 bottom-4 fixed rounded-3xl overflow-hidden'>
-        <MapContainer center={[filmingSelected!.coord_y, filmingSelected!.coord_x]} zoom={13} scrollWheelZoom={true}>
+        <MapContainer center={[filmingSelected!.coord_y, filmingSelected!.coord_x]} zoom={12} scrollWheelZoom={true}>
           <TileLayer
             url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
